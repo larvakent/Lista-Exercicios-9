@@ -1,0 +1,29 @@
+package Exercicios9;
+
+public class TesteAnimal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	  Cachorro Cachorro1 = new Cachorro("Cachorro","Canis lupus familiaris","Dachshund","Ração","Brincar, caçar, seguir o dono, etc...",
+	 "Máxima de 40km/h","Scooby (Puppy)","Latido","Corre, senta, pula, deita e rola",3);
+	  
+	  Cachorro1.imprimirInfo();
+	  
+	  System.out.println("\n-----------------------------------------------------------------------------------------");
+	  
+	  Cavalo Cavalo1 = new Cavalo("cavalo","Equus ferus","Thoroughbred (Puro-sangue Inglês)","Feno","-Não encontrado-","Máxima de 71km/h","Jonah",
+      "Relinchado","Corre e salta", 15);
+	  
+	  Cavalo1.imprimirInfo();
+	  
+	  System.out.println("\n-----------------------------------------------------------------------------------------");
+	  
+	  Preguiça Preguiça1 = new Preguiça("Bicho preguiça","Folivora","Bradypus variegatus","Folhas, frutos e seivas de algumas árvores",
+	  "Comer e dormir","máxima de 0,27km/h","Lully","Sons de alta frequência pelas narinas","Sobe em árvores",5);
+	  
+	  Preguiça1.imprimirInfo();
+
+	}
+
+}
