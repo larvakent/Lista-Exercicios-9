@@ -1,0 +1,73 @@
+package Exercicios9;
+
+public class Cavalo extends Animal {
+	
+	private String nomeCavalo;
+	private String somVocal;
+	private String movimentos;
+	private int idade;
+	
+	
+	public Cavalo(String nomeComum, String especie, String raça, String alimentaçao, String habitos,
+			String velocidade,String nomeCavalo,String somVocal,String movimentos,int idade)
+	{
+		super(nomeComum,especie,raça,alimentaçao,habitos,velocidade);
+		this.nomeCavalo = nomeCavalo;
+		this.somVocal = somVocal;
+		this.movimentos = movimentos;
+		this.idade = idade;
+	}
+
+
+	public String getNomeCavalo() {
+		return nomeCavalo;
+	}
+
+
+	public void setNomeCavalo(String nomeCavalo) {
+		this.nomeCavalo = nomeCavalo;
+	}
+
+
+	public String getSomVocal() {
+		return somVocal;
+	}
+
+
+	public void setSomVocal(String somVocal) {
+		this.somVocal = somVocal;
+	}
+
+
+	public String getMovimentos() {
+		return movimentos;
+	}
+
+
+	public void setMovimentos(String movimentos) {
+		this.movimentos = movimentos;
+	}
+
+
+	public int getIdade() {
+		return idade;
+	}
+
+
+	public void setIdade(int idade) {
+		this.idade = idade;
+	}
+	
+
+	public void imprimirInfo()
+	{
+		System.out.println("\nNome comum dado ao animal: "+getNomeComum()+"\nEspécie de origem: "+getEspecie()+"\nRaça do animal: "+getRaça()+
+	    "\nAlimentação: "+getAlimentaçao()+"\nHabitos comuns: "+getHabitos()+"\nVelocidade a qual se locomove: "+getVelocidade()+
+	    "\nNome do cavalo: "+nomeCavalo+"\nSom emitido pelo animal: "+somVocal+
+	    "\nQuais movimentos ele faz? "+movimentos+"\nIdade do animal: "+idade);
+		
+	}
+	
+	
+
+}
