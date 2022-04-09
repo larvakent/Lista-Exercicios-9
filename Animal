@@ -1,107 +1,27 @@
 package Exercicios9;
 
-public class Animal {
-   
-	 private String nomeComum;
-	 private String especie;
-	 private String raça;
-	 private String alimentaçao;
-	 private String habitos;
-	 private String velocidade;
-	 
-	 public Animal (String nomeComum,String especie,String raça,String alimentaçao,String habitos,String velocidade)
-	 {
-		 this.nomeComum = nomeComum;
-		 this.especie = especie;
-		 this.raça = raça;
-		 this.alimentaçao = alimentaçao;
-		 this.habitos = habitos;
-		 this.velocidade = velocidade;	 
-	 }
-  
-	 
+public abstract class Animal {
 	
-	 
-	public String getNomeComum() {
-		return nomeComum;
+	private String tipoAnimal;
+	
+	public Animal(String tipoAnimal)
+	{
+		this.tipoAnimal = tipoAnimal;
+	}
+	
+	abstract public void nome(String nomeAnimal);
+	abstract public void idade(int idadeAnimal);
+	abstract public void som(String somAnimal);
+
+	public String getTipoAnimal() {
+		return tipoAnimal;
 	}
 
-
-
-
-	public void setNomeComum(String nomeComum) {
-		this.nomeComum = nomeComum;
+	public void setTipoAnimal(String tipoAnimal) {
+		this.tipoAnimal = tipoAnimal;
 	}
-
-
-
-
-	public String getEspecie() {
-		return especie;
-	}
-
-
-
-
-	public void setEspecie(String especie) {
-		this.especie = especie;
-	}
-
-
-
-
-	public String getRaça() {
-		return raça;
-	}
-
-
-
-
-	public void setRaça(String raça) {
-		this.raça = raça;
-	}
-
-
-
-
-	public String getAlimentaçao() {
-		return alimentaçao;
-	}
-
-
-
-
-	public void setAlimentaçao(String alimentaçao) {
-		this.alimentaçao = alimentaçao;
-	}
-
-
-
-
-	public String getHabitos() {
-		return habitos;
-	}
-
-
-
-
-	public void setHabitos(String habitos) {
-		this.habitos = habitos;
-	}
-
-
-
-
-	public String getVelocidade() {
-		return velocidade;
-	}
-
-
-
-
-	public void setVelocidade(String velocidade) {
-		this.velocidade = velocidade;
-	}
-	 
-	 	 
+	
+	
+   
 }
+
